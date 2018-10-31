@@ -1,0 +1,30 @@
+
+hello_world.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00010000 <_start>:
+   10000:	e59f0024 	ldr	r0, [pc, #36]	; 1002c <loop+0x24>
+   10004:	e3a01000 	mov	r1, #0
+
+00010008 <loop>:
+   10008:	e2811001 	add	r1, r1, #1
+   1000c:	e2011007 	and	r1, r1, #7
+   10010:	e2811030 	add	r1, r1, #48	; 0x30
+   10014:	e5801000 	str	r1, [r0]
+   10018:	e3a0200d 	mov	r2, #13
+   1001c:	e5802000 	str	r2, [r0]
+   10020:	e3a0200a 	mov	r2, #10
+   10024:	e5802000 	str	r2, [r0]
+   10028:	eafffff6 	b	10008 <loop>
+   1002c:	101f1000 	andsne	r1, pc, r0
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00001341 	andeq	r1, r0, r1, asr #6
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000009 	andeq	r0, r0, r9
+  10:	01080106 	tsteq	r8, r6, lsl #2

@@ -1,0 +1,277 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C 4.8.2 -mtune=generic -march=i686 -g -fstack-protector"
+                    DW_AT_language              DW_LANG_C89
+                    DW_AT_name                  "main.c"
+                    DW_AT_comp_dir              "/home/baohua/develop/training/debug/gdb"
+                    DW_AT_low_pc                0x0804844d
+                    DW_AT_high_pc               <offset-from-lowpc>225
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x00000025>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "unsigned int"
+< 1><0x0000002c>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  "unsigned char"
+< 1><0x00000033>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "short unsigned int"
+< 1><0x0000003a>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "long unsigned int"
+< 1><0x00000041>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "signed char"
+< 1><0x00000048>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "short int"
+< 1><0x0000004f>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "int"
+< 1><0x00000056>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long long int"
+< 1><0x0000005d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "long long unsigned int"
+< 1><0x00000064>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long int"
+< 1><0x0000006b>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "sizetype"
+< 1><0x00000072>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000078>
+< 1><0x00000078>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "char"
+< 1><0x0000007f>    DW_TAG_structure_type
+                      DW_AT_name                  "book"
+                      DW_AT_byte_size             0x0000000c
+                      DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                      DW_AT_decl_line             0x00000003
+                      DW_AT_sibling               <0x000000b0>
+< 2><0x0000008b>      DW_TAG_member
+                        DW_AT_name                  "name"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000004
+                        DW_AT_type                  <0x00000072>
+                        DW_AT_data_member_location  0
+< 2><0x00000097>      DW_TAG_member
+                        DW_AT_name                  "year"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000005
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_data_member_location  4
+< 2><0x000000a3>      DW_TAG_member
+                        DW_AT_name                  "price"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000006
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_data_member_location  8
+< 1><0x000000b0>    DW_TAG_subprogram
+                      DW_AT_name                  "func"
+                      DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                      DW_AT_decl_line             0x00000009
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x0000004f>
+                      DW_AT_low_pc                0x0804844d
+                      DW_AT_high_pc               <offset-from-lowpc>45
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_call_sites    yes(1)
+                      DW_AT_sibling               <0x000000f0>
+< 2><0x000000c9>      DW_TAG_formal_parameter
+                        DW_AT_name                  "n"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000009
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 9100: DW_OP_fbreg 0
+< 2><0x000000d5>      DW_TAG_variable
+                        DW_AT_name                  "sum"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x0000000b
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 9170: DW_OP_fbreg -16
+< 2><0x000000e3>      DW_TAG_variable
+                        DW_AT_name                  "i"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x0000000b
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 9174: DW_OP_fbreg -12
+< 1><0x000000f0>    DW_TAG_subprogram
+                      DW_AT_name                  "modify_book"
+                      DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                      DW_AT_decl_line             0x00000013
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x0804847a
+                      DW_AT_high_pc               <offset-from-lowpc>76
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000129>
+< 2><0x00000105>      DW_TAG_variable
+                        DW_AT_name                  "i"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000015
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
+< 2><0x00000111>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x08048487
+                        DW_AT_high_pc               <offset-from-lowpc>61
+< 3><0x0000011a>        DW_TAG_subprogram
+                          DW_AT_external              yes(1)
+                          DW_AT_name                  "sleep"
+                          DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                          DW_AT_decl_line             0x0000001c
+                          DW_AT_type                  <0x0000004f>
+                          DW_AT_declaration           yes(1)
+< 4><0x00000125>          DW_TAG_unspecified_parameters
+< 1><0x00000129>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  "main"
+                      DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                      DW_AT_decl_line             0x00000020
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x0000004f>
+                      DW_AT_low_pc                0x080484c6
+                      DW_AT_high_pc               <offset-from-lowpc>104
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000179>
+< 2><0x00000142>      DW_TAG_formal_parameter
+                        DW_AT_name                  "argc"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000020
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 9100: DW_OP_fbreg 0
+< 2><0x00000150>      DW_TAG_formal_parameter
+                        DW_AT_name                  "argv"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000020
+                        DW_AT_type                  <0x00000179>
+                        DW_AT_location              len 0x0002: 9104: DW_OP_fbreg 4
+< 2><0x0000015e>      DW_TAG_variable
+                        DW_AT_name                  "i"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000022
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 7418: DW_OP_breg4+24
+< 2><0x0000016a>      DW_TAG_variable
+                        DW_AT_name                  "result"
+                        DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                        DW_AT_decl_line             0x00000023
+                        DW_AT_type                  <0x0000004f>
+                        DW_AT_location              len 0x0002: 741c: DW_OP_breg4+28
+< 1><0x00000179>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000072>
+< 1><0x0000017f>    DW_TAG_variable
+                      DW_AT_name                  "bk"
+                      DW_AT_decl_file             0x00000001 /home/baohua/develop/training/debug/gdb/main.c
+                      DW_AT_decl_line             0x00000007
+                      DW_AT_type                  <0x0000007f>
+                      DW_AT_external              yes(1)
+                      DW_AT_location              len 0x0005: 0328a00408: DW_OP_addr 0x0804a028
+
+.debug_line: line number info for a single cu
+Source lines (from CU-DIE at .debug_info offset 0x0000000b):
+
+<pc>        [row,col] NS BB ET PE EB IS= DI= uri: "filepath"
+NS new statement, BB new basic block, ET end of text sequence
+PE prologue end, EB epilogue begin
+IA=val ISA number, DI=val discriminator value
+0x0804844d  [  10, 0] NS uri: "/home/baohua/develop/training/debug/gdb/main.c"
+0x08048453  [  11, 0] NS
+0x0804845a  [  12, 0] NS
+0x08048463  [  14, 0] NS DI=0x2
+0x08048469  [  12, 0] NS DI=0x2
+0x0804846d  [  12, 0] DI=0x1
+0x08048475  [  16, 0] NS
+0x08048478  [  17, 0] NS
+0x0804847a  [  20, 0] NS
+0x08048480  [  21, 0] NS
+0x08048487  [  23, 0] NS DI=0x1
+0x08048491  [  24, 0] NS DI=0x1
+0x08048499  [  25, 0] NS DI=0x1
+0x080484a1  [  26, 0] NS DI=0x1
+0x080484a5  [  27, 0] NS DI=0x1
+0x080484b8  [  28, 0] NS DI=0x1
+0x080484c4  [  29, 0] NS DI=0x1
+0x080484c6  [  33, 0] NS
+0x080484cf  [  35, 0] NS
+0x080484d7  [  36, 0] NS
+0x080484e1  [  38, 0] NS DI=0x2
+0x080484e6  [  36, 0] NS DI=0x2
+0x080484eb  [  36, 0] DI=0x1
+0x080484f2  [  40, 0] NS
+0x08048506  [  41, 0] NS
+0x08048522  [  43, 0] NS
+0x08048527  [  45, 0] NS
+0x0804852c  [  46, 0] NS
+0x0804852e  [  46, 0] NS ET
+
+.debug_pubnames
+
+.debug_macinfo
+
+.debug_string
+name at offset 0x00000000, length   13 is 'long long int'
+name at offset 0x0000000e, length   18 is 'short unsigned int'
+name at offset 0x00000021, length   39 is '/home/baohua/develop/training/debug/gdb'
+name at offset 0x00000049, length    6 is 'main.c'
+name at offset 0x00000050, length    4 is 'name'
+name at offset 0x00000055, length   22 is 'long long unsigned int'
+name at offset 0x0000006c, length   13 is 'unsigned char'
+name at offset 0x0000007a, length   59 is 'GNU C 4.8.2 -mtune=generic -march=i686 -g -fstack-protector'
+name at offset 0x000000b6, length    4 is 'main'
+name at offset 0x000000bb, length    5 is 'sleep'
+name at offset 0x000000c1, length    6 is 'result'
+name at offset 0x000000c8, length    4 is 'argc'
+name at offset 0x000000cd, length    4 is 'year'
+name at offset 0x000000d2, length   11 is 'modify_book'
+name at offset 0x000000de, length    4 is 'func'
+name at offset 0x000000e3, length    9 is 'short int'
+name at offset 0x000000ed, length    5 is 'price'
+name at offset 0x000000f3, length    8 is 'sizetype'
+name at offset 0x000000fc, length    4 is 'argv'
+
+.debug_aranges
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C 4.8.2 -mtune=generic -march=i686 -g -fstack-protector"
+                    DW_AT_language              DW_LANG_C89
+                    DW_AT_name                  "main.c"
+                    DW_AT_comp_dir              "/home/baohua/develop/training/debug/gdb"
+                    DW_AT_low_pc                0x0804844d
+                    DW_AT_high_pc               <offset-from-lowpc>225
+                    DW_AT_stmt_list             0x00000000
+
+
+arange starts at 0x0804844d, length of 0x000000e1, cu_die_offset = 0x0000000b
+arange end
+.debug_frame
+
+.debug_static_func
+
+.debug_static_vars
+
+.debug_weaknames
+

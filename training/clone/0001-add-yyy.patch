@@ -1,0 +1,23 @@
+From aac9c8c012420ebaa90588fc611797484ee2c524 Mon Sep 17 00:00:00 2001
+From: Barry Song <21cnbao@gmail.com>
+Date: Tue, 10 Nov 2015 11:11:51 +0800
+Subject: [PATCH] add yyy
+
+Signed-off-by: Barry Song <21cnbao@gmail.com>
+---
+ main.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/main.c b/main.c
+index 5834f96..5e96ba8 100644
+--- a/main.c
++++ b/main.c
+@@ -1,2 +1,4 @@
+ main()
+-
++{
++add yyy
++}
+-- 
+1.9.1
+

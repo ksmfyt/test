@@ -1,0 +1,47 @@
+baohua@baohua-VirtualBox:~/develop/linux/extra/img$ sudo ~/develop/training/toolchain/binso_dep.sh -o /tmp/1.png usr/sbin/flash_erase
+Analyzing dependencies of usr/sbin/flash_erase...
+
+Parsing file:              usr/sbin/flash_erase
+Parsing file:              libgcc_s.so.1
+Parsing file:              libc.so.6
+Parsing file:              ld-linux.so.3
+Creating output as /tmp/1.png...
+baohua@baohua-VirtualBox:~/develop/linux/extra/img$ sudo ~/develop/training/toolchain/nm/symbol-dep.sh -s usr/sbin/flash_erase -d lib/libc.so.6 
+Dependencies between usr/sbin/flash_erase and lib/libc.so.6:
+abort
+calloc
+close
+closedir
+__errno_location
+exit
+fflush
+fprintf
+free
+__fxstat64
+getopt_long
+ioctl
+__isoc99_sscanf
+__libc_start_main
+lseek64
+malloc
+memchr
+memcmp
+memcpy
+memset
+open64
+opendir
+printf
+putchar
+raise
+read
+readdir64
+sprintf
+strcmp
+strcpy
+strerror
+strlen
+strtoul
+strtoull
+write
+__xstat64
+

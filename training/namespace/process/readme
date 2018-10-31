@@ -1,0 +1,14 @@
+(a) ./ns_child_exec -p sh -c 'echo $$'
+
+
+(b) ./ns_child_exec -p ./simple_init -v
+   init: my PID is 1
+   init$ ./orphan
+
+(c)  ./ns_child_exec -p -m ./simple_init
+------------------
+   # ./ns_child_exec -p -m ./simple_init
+   init$ mount -t proc proc /proc
+   init$ ps a
+
+

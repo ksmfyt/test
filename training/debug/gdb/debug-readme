@@ -1,0 +1,103 @@
+baohua@baohua-VirtualBox:~/develop/training/debug/gdb$ gdb ./a.out 
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./a.out...done.
+(gdb) b modify_book 
+Breakpoint 1 at 0x8048450: file main.c, line 21.
+(gdb) r
+Starting program: /home/baohua/develop/training/debug/gdb/a.out 
+
+Breakpoint 1, modify_book () at main.c:21
+21		int i = 0;
+(gdb) p bk
+$1 = {name = 0x0, year = 0, price = 0}
+(gdb) watch bk
+Hardware watchpoint 2: bk
+(gdb) c
+Continuing.
+Hardware watchpoint 2: bk
+
+Old value = {name = 0x0, year = 0, price = 0}
+New value = {name = 0x8048570 "linux device driver", year = 0, price = 0}
+modify_book () at main.c:24
+24			bk.year = i;
+(gdb) p bk.name
+$2 = 0x8048570 "linux device driver"
+(gdb) p bk.year
+$3 = 0
+(gdb) p &bk->year
+$4 = (int *) 0x804a028 <bk+4>
+(gdb) p *&bk
+$5 = {name = 0x8048570 "linux device driver", year = 0, price = 0}
+(gdb) p *&bk.year
+$6 = 0
+(gdb) bt
+#0  modify_book () at main.c:24
+#1  0x080484d8 in main (argc=1, argv=0xbfffefd4) at main.c:41
+(gdb) p &bk
+$7 = (struct book *) 0x804a024 <bk>
+(gdb) x/16xw 0x804a024
+0x804a024 <bk>:	0x08048570	0x00000000	0x00000000	0x00000000
+0x804a034:	0x00000000	0x00000000	0x00000000	0x00000000
+0x804a044:	0x00000000	0x00000000	0x00000000	0x00000000
+0x804a054:	0x00000000	0x00000000	0x00000000	0x00000000
+(gdb) x/16s 0x08048570
+0x8048570:	"linux device driver"
+0x8048584:	"result[1-100] = %d n "
+0x804859a:	"result[1-250] = %d n "
+0x80485b0:	"\001\033\003;8"
+0x80485b6:	""
+0x80485b7:	""
+0x80485b8:	"\006"
+0x80485ba:	""
+0x80485bb:	""
+0x80485bc:	"0\375\377\377T"
+0x80485c2:	""
+0x80485c3:	""
+0x80485c4:	"m\376\377\377x"
+0x80485ca:	""
+0x80485cb:	""
+0x80485cc:	"\232\376\377\377\230"
+(gdb) l
+19	static void modify_book(void)
+20	{
+21		int i = 0;
+22		while(1) {
+23			bk.name = "linux device driver";
+24			bk.year = i;
+25			bk.price = i;
+26			i++;
+27		};
+28	}
+(gdb) n
+25			bk.price = i;
+(gdb) 
+26			i++;
+(gdb) 
+27		};
+(gdb) 
+23			bk.name = "linux device driver";
+(gdb) 
+24			bk.year = i;
+(gdb) c
+Continuing.
+Hardware watchpoint 2: bk
+
+Old value = {name = 0x8048570 "linux device driver", year = 0, price = 0}
+New value = {name = 0x8048570 "linux device driver", year = 1, price = 0}
+modify_book () at main.c:25
+25			bk.price = i;
+(gdb) 
+

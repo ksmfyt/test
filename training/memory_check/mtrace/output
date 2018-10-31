@@ -1,0 +1,5 @@
+= Start
+@ ./a.out:[0x80484e3] + 0x83744d0 0x1
+@ /lib/i386-linux-gnu/libc.so.6:(clearenv+0x74)[0xb7569244] - 0x8374008
+@ /lib/i386-linux-gnu/libc.so.6:[0xb761e386] - 0x8374130
+@ /lib/i386-linux-gnu/libc.so.6:[0xb761e38e] - 0x8374148
